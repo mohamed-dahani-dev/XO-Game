@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.xo{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 35px;
+    border: 2px solid #220fcf;
+    box-shadow: 30px 30px 15px #808080;
+}
+.xo div{
+    background-color: #220fcf;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: 900;
+}
+.xo div:hover{
+    background-color: #000000;
+}
+.title{
+    grid-column: 1/4;
+    font-size: 50px !important;
+    display: flex;
+    gap: 25px;
+}
+span{
+    color: #ffff00;
+}
+.div1{
+    grid-column: 1/2;
+}
+.div2{
+    grid-column: 2/3;
+}
+.div3{
+    grid-column: 3/4;
+}
+.div4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.div5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.div6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.div7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.div8{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.div9{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+@media screen and (max-width: 530px) {
+    .xo{
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(4, 100px);
+    }
+    .xo div{
+        font-size: 65px;
+    }
+    .title{
+        font-size: 50px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .xo{
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(4, 80px);
+    }
+    .xo div{
+        font-size: 50px;
+    }
+    .title{
+        font-size: 40px !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .xo{
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(4, 70px);
+    }
+    .xo div{
+        font-size: 45px;
+    }
+    .title{
+        font-size: 35px !important;
+    }
+}
